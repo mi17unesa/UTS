@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Dosen_Activity">
+
+
+
+
+        <TextView
+            android:id="@+id/tv_juduldosen"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="48dp"
+            android:text="Hitung Dosen"
+            android:textSize="25dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginLeft="30dp"
+            android:textColor="#000"
+            android:textAlignment="center"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <EditText
+            android:id="@+id/et_namadosen"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="48dp"
+            android:hint="Nama"
+            android:inputType="text"
+            android:layout_marginRight="30dp"
+            android:layout_marginLeft="30dp"
+            android:textColor="#000"
+            app:layout_constraintTop_toTopOf="@id/tv_juduldosen"
+            tools:layout_editor_absoluteX="0dp" />
+
+        <EditText
+            android:id="@+id/et_nipdosen"
+            android:layout_marginRight="30dp"
+            android:layout_marginLeft="30dp"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="48dp"
+            android:hint="NIP"
+            android:inputType="text"
+            android:textColor="#000"
+            app:layout_constraintTop_toTopOf="@id/et_namadosen"
+            tools:layout_editor_absoluteX="0dp"/>
+
+        <EditText
+            android:id="@+id/et_alamatdosen"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="48dp"
+            android:inputType="text"
+            android:hint="Alamat"
+            android:textColor="#000"
+            app:layout_constraintTop_toTopOf="@id/et_nipdosen"
+            tools:layout_editor_absoluteX="0dp"/>
+        <EditText
+            android:id="@+id/et_kehadirandosen"
+            android:layout_marginRight="30dp"
+            android:layout_marginLeft="30dp"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="48dp"
+            android:inputType="number"
+            android:hint="Kehadiran"
+            app:layout_constraintTop_toTopOf="@id/et_alamatdosen"
+            tools:layout_editor_absoluteX="0dp"/>
+
+
+        <Button
+            android:id="@+id/btn_hitungdosen"
+            android:layout_width="200dp"
+            android:layout_height="70dp"
+            android:text="Hitung"
+            android:elevation="5dp"
+            android:textColor="#000"
+            android:layout_marginTop="30dp"
+            android:textStyle="bold"
+            android:textSize="20dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.498"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/et_kehadirandosen"/>
+
+        <TextView
+            android:id="@+id/tv_hasildosen"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32dp"
+            android:gravity="center"
+            android:text="Hasil"
+            android:textAlignment="center"
+            android:textSize="20sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/btn_hitungdosen" />
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

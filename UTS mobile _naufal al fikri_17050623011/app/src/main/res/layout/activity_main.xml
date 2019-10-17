@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="HITUNG GAJI"
+        android:textColor="#000"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:layout_marginTop="40dp"
+        android:textAlignment="center"/>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cv_staff"
+        android:layout_marginTop="100dp"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_marginLeft="60dp"
+        android:layout_marginRight="60dp"
+        app:cardCornerRadius="50dp"
+        android:background="#000">
+        <TextView
+            android:textColor="#000"
+            android:textSize="20dp"
+            android:textAlignment="center"
+            android:gravity="center_vertical"
+            android:layout_width="match_parent"
+            android:textStyle="bold"
+            android:layout_height="match_parent"
+            android:text="Gaji Staff"/>
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cv_Dosen"
+        android:layout_marginTop="100dp"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_marginLeft="60dp"
+        android:layout_marginRight="60dp"
+        app:cardCornerRadius="50dp"
+        android:background="#000">
+        <TextView
+            android:textColor="#000"
+            android:textSize="20dp"
+            android:textAlignment="center"
+            android:gravity="center_vertical"
+            android:layout_width="match_parent"
+            android:textStyle="bold"
+            android:layout_height="match_parent"
+            android:text="Gaji Dosen"/>
+    </androidx.cardview.widget.CardView>
+
+</LinearLayout>
